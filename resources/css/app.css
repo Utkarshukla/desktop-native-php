@@ -1,0 +1,20 @@
+/* Custom Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 5px; /* Set the width of the scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(224, 203, 86); /* Set the color of the scrollbar */
+    border-radius: 10px; /* Optional: rounded corners for the scrollbar */
+    /* border: 2px solid transparent; Optional: add spacing between thumb and track */
+    background-clip: content-box; /* Ensures the border does not cover the thumb */
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Light gray background for the scrollbar track */
+    border-radius: 10px; /* Optional: rounded corners for the track */
+}
+
+::-webkit-scrollbar-button {
+    display: none; /* Hide the arrows on the scrollbar */
+}
