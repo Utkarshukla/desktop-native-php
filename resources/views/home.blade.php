@@ -1,32 +1,23 @@
-<!-- resources/views/home.blade.php -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link href="{{ mix('css/app.css') }}" rel="stylesheet">
-</head>
-<body class="bg-gray-100 text-gray-900">
-    <header class="bg-blue-600 text-white p-4">
-        <nav class="container mx-auto flex justify-between">
-            <a href="/" class="text-2xl font-bold">MyWebsite</a>
-            <div>
-                <a href="/" class="mx-4">Home</a>
-                <a href="/about" class="mx-4">About</a>
-                <a href="/contact" class="mx-4">Contact</a>
-                <a href="/shop" class="mx-4">Shop</a>
+@include('components.header', ['activeTab' => 'Home'])
+<div class="bg-dark">
+    <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-10 col-sm-8 col-lg-6">
+                <img src="https://getbootstrap.com/docs/5.0/examples/heroes/bootstrap-themes.png"
+                    class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
             </div>
-        </nav>
-    </header>
+            <div class="col-lg-6 text-white">
+                <h1 class="display-5 fw-bold lh-1 mb-3">Responsive left-aligned hero with image</h1>
+                <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s
+                    most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid
+                    system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                    <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
+                    <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-    <main class="container mx-auto py-16">
-        <h1 class="text-4xl font-bold text-center mb-8">Welcome to Our Website</h1>
-        <p class="text-lg text-center">This is the homepage. You can navigate to About, Contact, and Shop pages from the menu above.</p>
-    </main>
-
-    <footer class="bg-blue-600 text-white text-center py-4">
-        &copy; 2025 MyWebsite. All rights reserved.
-    </footer>
-</body>
-</html>
+@include('components.footer')

@@ -1,32 +1,16 @@
-<!-- resources/views/about.blade.php -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-</head>
-<body class="bg-gray-100 text-gray-900">
-    <header class="bg-blue-600 text-white p-4">
-        <nav class="container mx-auto flex justify-between">
-            <a href="/" class="text-2xl font-bold">MyWebsite</a>
-            <div>
-                <a href="/" class="mx-4">Home</a>
-                <a href="/about" class="mx-4">About</a>
-                <a href="/contact" class="mx-4">Contact</a>
-                <a href="/shop" class="mx-4">Shop</a>
+@include('components.header', ['activeTab' => 'Home'])
+<div class="bg-dark text-secondary px-4 py-5 text-center">
+    <div class="py-5">
+        <h1 class="display-5 fw-bold text-white">Dark mode hero</h1>
+        <div class="col-lg-6 mx-auto">
+            <p class="fs-5 mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s
+                most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system,
+                extensive prebuilt components, and powerful JavaScript plugins.</p>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                <button type="button" class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold">Custom button</button>
+                <button type="button" class="btn btn-outline-light btn-lg px-4">Secondary</button>
             </div>
-        </nav>
-    </header>
-
-    <main class="container mx-auto py-16">
-        <h1 class="text-4xl font-bold text-center mb-8">About Us</h1>
-        <p class="text-lg text-center">We are a company that values quality and customer satisfaction. Our mission is to provide the best products and services to our customers.</p>
-    </main>
-
-    <footer class="bg-blue-600 text-white text-center py-4">
-        &copy; 2025 MyWebsite. All rights reserved.
-    </footer>
-</body>
-</html>
+        </div>
+    </div>
+</div>
+@include('components.footer')
