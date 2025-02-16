@@ -10,6 +10,10 @@ Welcome to my NativePHP Desktop Application! This application is built using Nat
 
 ---
 
+
+![Demo GIF](demo.gif)
+
+
 ## 🖥️ Installation
 
 ### 1. Clone the Repository
